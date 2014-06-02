@@ -20,8 +20,7 @@ class GoalsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        //TextView textView = (TextView) rootView.findViewById(R.id.tabTitleTextView);
-        TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+        TextView textView = (TextView) rootView.findViewById(R.id.tabTitleTextView);
         textView.setText(getResources().getString(R.string.goals_tab_title));
         return rootView;
     }

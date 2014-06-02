@@ -1,5 +1,6 @@
 package com.intellilife.app;
 
+import java.lang.reflect.Array;
 import java.util.Locale;
 
 import android.support.v7.app.ActionBarActivity;
@@ -40,8 +41,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -104,11 +103,11 @@ public class MainActivity extends ActionBarActivity {
             Locale l = Locale.getDefault();
             switch (position) {
                 case 0:
-                    return getString(R.string.title_section1).toUpperCase(l);
+                    return getString(R.string.goals_tab_title).toUpperCase(l);
                 case 1:
-                    return getString(R.string.title_section2).toUpperCase(l);
+                    return getString(R.string.today_tab_title).toUpperCase(l);
                 case 2:
-                    return getString(R.string.title_section3).toUpperCase(l);
+                    return getString(R.string.usual_tab_title).toUpperCase(l);
             }
             return null;
         }

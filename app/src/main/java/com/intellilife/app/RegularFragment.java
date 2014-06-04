@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 // class describes regular tasks
-class RegularFragment extends Fragment {
+public class RegularFragment extends Fragment {
+
+    public RegularFragment() {
+    }
 
     public static RegularFragment newInstance() {
         RegularFragment fragment = new RegularFragment();

@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 // class describes list of goals
-class GoalsFragment extends Fragment {
+public class GoalsFragment extends Fragment {
+
+    public GoalsFragment() {
+    }
 
     public static GoalsFragment newInstance() {
         GoalsFragment fragment = new GoalsFragment();

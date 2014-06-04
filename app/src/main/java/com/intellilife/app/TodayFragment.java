@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 // class describes plan for current day
-class TodayFragment extends Fragment {
+public class TodayFragment extends Fragment {
+
+    public TodayFragment() {
+    }
 
     public static TodayFragment newInstance() {
         TodayFragment fragment = new TodayFragment();
